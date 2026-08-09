@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVI — AI Interview Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="ambient one"></div><div class="ambient two"></div>
+  <header><a class="brand" href="#"><span class="brand-mark">V</span><span>vivi<span class="muted">.ai</span></span></a><div class="header-actions"><span class="status"><i></i> System ready</span><button class="theme" id="theme" aria-label="Toggle theme">☾</button></div></header>
+  <main>
+    <section id="home" class="home screen active">
+      <div class="eyebrow">ADAPTIVE TECHNICAL ASSESSMENTS <span>◆</span> BUILT FOR DEPTH</div>
+      <div class="hero"><div><h1>Find the signal<br>behind the <em>answer.</em></h1><p>VIVI turns a learning journey into an intelligent interview—adapting in real time to test how candidates think, build, and reason.</p><button class="primary start" id="start">Create interview <b>→</b></button></div><div class="hero-card"><div class="pulse"><span></span> INTERVIEW INTELLIGENCE</div><div class="orbit"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="core">AI</div></div><div class="signal-grid"><span>Learning signals</span><b>31/31</b><span>Active context</span><b>8 areas</b><span>Adaptive depth</span><b>Live</b></div></div></div>
+      <div class="feature-row"><article><span>01</span><h3>Journey-aware</h3><p>Questions are rooted in real curriculum progress and learning signals.</p></article><article><span>02</span><h3>Adaptive by design</h3><p>Each answer changes the depth, direction, and difficulty of the next.</p></article><article><span>03</span><h3>Actionable after</h3><p>Every interview becomes a clear plan for what to master next.</p></article></div>
+    </section>
+
+    <section id="setup" class="setup screen">
+      <div class="section-top"><button class="back" data-to="home">← Back</button><span class="step">01 / 02</span></div>
+      <div class="setup-grid"><div><div class="eyebrow">INTERVIEW SETUP</div><h2>Start with<br><em>context.</em></h2><p>Choose a candidate and VIVI will build a private, adaptive interview plan around their actual learning journey.</p></div><form id="setup-form"><label>Candidate profile<select id="candidate"></select></label><div id="candidate-preview" class="candidate-preview"></div><label>Interview focus<div class="focuses"><button type="button" class="focus selected">AI engineering</button><button type="button" class="focus">System design</button><button type="button" class="focus">Production AI</button></div></label><label>Session depth<div class="depth"><button type="button" class="selected">Focused<br><small>8 questions · ~15 min</small></button><button type="button">Extended<br><small>12 questions · ~30 min</small></button></div></label><button class="primary" type="submit">Begin assessment <b>→</b></button></form></div>
+    </section>
+
+    <section id="interview" class="interview screen"><aside><a class="brand"><span class="brand-mark">V</span>vivi<span class="muted">.ai</span></a><div class="candidate-mini" id="mini-candidate"></div><div class="side-label">YOUR JOURNEY</div><div id="journey" class="journey"></div><div class="side-bottom"><div><span>ADAPTIVE DEPTH</span><strong id="difficulty">05</strong><div class="bar"><i id="difficulty-bar"></i></div></div><div><span>INTERVIEW STATE</span><strong>ACTIVE</strong></div></div></aside><div class="interview-main"><div class="interview-head"><div><span class="live"><i></i> INTERVIEW ACTIVE</span><h3 id="topic">Interview</h3></div><span id="progress">Question 1 / 8</span></div><div class="conversation" id="conversation"></div><form class="answer-box" id="answer-form"><textarea id="answer" rows="3" placeholder="Take a moment. Explain your reasoning..." required></textarea><div><span>VIVI is listening for reasoning, trade-offs, and practical detail.</span><button class="send" type="submit">Send answer <b>↑</b></button></div></form></div></section>
+
+    <section id="report" class="report screen"><div class="section-top"><button class="back" data-to="home">← End session</button><span class="step">02 / 02</span></div><div class="report-hero"><div><div class="eyebrow">YOUR INTERVIEW REPORT</div><h2>Clarity, not<br>just a <em>score.</em></h2><p id="report-summary"></p></div><div class="score-ring"><strong id="score">--</strong><span>OVERALL SIGNAL</span></div></div><div class="report-grid"><article class="dimensions"><h3>Technical signal</h3><div id="dimension-list"></div></article><article><h3>What stood out</h3><ul id="strengths"></ul></article><article><h3>Focus next</h3><ul id="gaps"></ul></article></div><div class="next-card"><div><span>PERSONALIZED NEXT STEP</span><h3>Turn this assessment into momentum.</h3><p id="next-step"></p></div><button class="primary" id="restart">Start another interview <b>→</b></button></div></section>
+  </main><script src="/static/app.js"></script>
+</body></html>
