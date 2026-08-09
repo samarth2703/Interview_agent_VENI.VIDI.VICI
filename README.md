@@ -315,29 +315,7 @@ Evaluation Dataset
 
 ---
 
-## 🚀 Getting Started
 
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/AI-Interview-Agent.git
-```
-
-Enter the project directory:
-
-```bash
-cd AI-Interview-Agent
-```
-
-Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-> Replace the installation instructions above with the project's actual setup commands if your implementation uses a different environment.
-
----
 
 ## 📁 Suggested Project Structure
 
